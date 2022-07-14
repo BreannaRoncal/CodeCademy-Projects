@@ -1,0 +1,53 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:sans-serif;
+  background-color:#003366;
+}
+
+main{
+  padding: 50px;
+}
+
+table{
+  border-collapse:collapse;
+}
+
+th, td{
+  border:2px solid black;
+  padding:0.5rem;
+
+}
+th{
+  background-color:#ff9966;
+}
+td{
+  background-color:#ffcc99;
+}
+
+h1{
+  background-color:lightsteelblue;
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+
+}
+
+h2{
+  width:100%;
+  background-color:dodgerblue;
+  margin:20px 0;
+  padding:10px;
+  text-align:center;
+
+}
+
+p{
+  background-color:lightsteelblue;
+  width:100%;
+  padding:20px 10px;
+
+}
