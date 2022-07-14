@@ -25,23 +25,23 @@
 
         <tbody>
           <tr>
-            <td>display:flex;</td>
+            <td>display: flex;</td>
             <td>Defines the flex container (inline)</td>
           </tr>
           <tr>
-            <td>flex-direction:direction;</td>
+            <td>flex-direction: direction;</td>
             <td>-row: left to right<br>
                 -col: top to bottom
             </td>
           </tr>
           <tr>
-            <td>flex-wrap:direction;</td>
+            <td>flex-wrap: direction;</td>
             <td>-nowrap (default): all items on one line<br>
                 -wrap: all items will wrap onto multiple lines, from top to bottom
             </td>
           </tr>
           <tr>
-            <td>justify-content:alignment;</td>
+            <td>justify-content: alignment;</td>
             <td>Defines alignment along the main axis<br>
               -flex-start (default): items packed towards the start of the flex-direction<br>
                 -flex-end: items are packed towards the end of the flex-direction<br>
@@ -51,7 +51,7 @@
             </td>
           </tr>
           <tr>
-            <td>align-items:alignment;</td>
+            <td>align-items: alignment;</td>
             <td>Defines alignment along the cross-axis<br>
               -stretch (default): stretch to fill the container<br>
                 -flex-start/end: see above description<br>
@@ -65,6 +65,81 @@
 
     <section id="grid">
       <h2>Grid</h2>
+      <table>
+        <thead>
+          <th>Property</th>
+          <th>Description</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>display: grid;</td>
+            <td>Defines a block-level grid</td>
+          </tr>
+          <tr>
+            <td>grid-template-columns/rows: values;</td>
+            <td>Defines the columns and rows of the grid. The values are the size of each column/row and are space separated.<br>
+                The values can be in px, named, repeat(num of times, values to repeat), and fr (fraction of free space of the grid container)</td>
+          </tr>
+          <tr>
+            <td>grid-template-areas: name;</td>
+            <td>Defines a grid by referencing the names of the grid areas. Items are placed based on their <strong>grid-area</strong> properties.<br>
+              -Repeating the name of the grid area expands the size of the area<br>
+              -"." is an empty cell<br>
+              -"none" means no grid areas are defined
+            </td>
+          </tr>
+          <tr>
+            <td>gap: grid-row-gap grid-column-gap;</td>
+            <td>Length values. Note: row-gap will default to column-gap, if none specified</td>
+          </tr>
+          <tr>
+            <td>justify-items: values;<br>align-items: values;</td>
+            <td>justify-items lines grid items along the row axis, while align-items lines grid items along the column axis<br>
+              -start: aligns items flush to the start edge of their cell<br>
+              -end: aligns items flush to the end edge of their cell<br>
+              -center: aligns items in the center of their cell<br>
+              -stretch (default): fills the whole width of the cell
+
+            </td>
+          </tr>
+          <tr>
+            <td>justify-content: values;<br>align-content: values;</td>
+            <td>Use when the total size of your grid is less than the size of its grid container, i.e. when non flexible units are used. Then you can set the alignment of the grid within the grid container.<br>justify-content lines grid items along the row axis, while align-items lines grid items along the column axis<br>
+              -start: aligns the grid flush to the start edge of the grid container<br>
+              -end: aligns the grid flush to the end edge of the grid container<br>
+              -center: aligns the grid in the center of the grid container<br>
+              -stretch: resizes the grid items so the grid fills the wull width of the grid container<br>
+              -space-around: places an even amount of space between each grid item, with half-sized spaces on the start and end edges<br>
+              -space-between:places and even amount of space between each grid item, but no spaces on the start and end edges<br>
+              -space-evenly: spaces in between and at edges are even
+
+            </td>
+          </tr>
+          <tr>
+            <td>grid-column/row: start-line / end-line;</td>
+            <td>Determines a grid item's location be referencing specific grid lines.
+              -line: a number referring to a numbered grid line or a name to refer to a named grid line<br>
+              -span (number or name): the item will span across the provided number or grid tracks or until it hits the next line with the provided name<br>
+              -auto: auto placement, automatic span or a default span of one<br>
+              -<strong>Default</strong> item will span 1 track if no value is declared
+
+            </td>
+          </tr>
+          <tr>
+            <td>grid-area: area-name;</td>
+            <td>Gives an item a name so it can be referenced by <strong>grid-template-areas</strong> property<br>
+            -or used as a shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end
+            </td>
+          </tr>
+          <tr>
+            <td>place-self: align-self-value justif-self-value;</td>
+            <td>Shorthand for for align-self and justify-self<br>
+              -start/end/center/stretch. If only one value set, the second value will default to it
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </body>
 </html>
