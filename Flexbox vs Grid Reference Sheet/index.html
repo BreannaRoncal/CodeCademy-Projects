@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Flexbox vs Grid Reference Sheet</h1>
+    <h2>When to use which one</h2>
+    <p><strong>Flexbox</strong> is more one-dimensional, item layout is either horizontal or vertical. The widths/heights of the flex items are determined by their content, it grows or shrinks depending on the content and the available space. So, it's good for responsive websites.
+    </p>
+
+    <p><strong>Grid</strong> is two-dimensional with a main axis and a cross axis where you can place items into cells defined by rows and columns. The placement of items is precisely controlled, but the content does not grow or shrink.
+    </p>
+    
+    <section id="flexbox">
+      <h2>Flexbox</h2>
+      <table id="flexbox-table">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>display:flex;</td>
+            <td>Defines the flex container (inline)</td>
+          </tr>
+          <tr>
+            <td>flex-direction:direction;</td>
+            <td>-row: left to right<br>
+                -col: top to bottom
+            </td>
+          </tr>
+          <tr>
+            <td>flex-wrap:direction;</td>
+            <td>-nowrap (default): all items on one line<br>
+                -wrap: all items will wrap onto multiple lines, from top to bottom
+            </td>
+          </tr>
+          <tr>
+            <td>justify-content:alignment;</td>
+            <td>Defines alignment along the main axis<br>
+              -flex-start (default): items packed towards the start of the flex-direction<br>
+                -flex-end: items are packed towards the end of the flex-direction<br>
+                -center: items are centered along the line<br>
+                -space-between: items are evenly spaced on the line, from start to end<br>
+                -space-evenly: items are spaced equally between each other and from the edges.
+            </td>
+          </tr>
+          <tr>
+            <td>align-items:alignment;</td>
+            <td>Defines alignment along the cross-axis<br>
+              -stretch (default): stretch to fill the container<br>
+                -flex-start/end: see above description<br>
+                -center: items are centered in the cross-axis
+                
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="grid">
+      <h2>Grid</h2>
+    </section>
+  </body>
+</html>
