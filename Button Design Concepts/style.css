@@ -1,0 +1,55 @@
+
+
+a{
+  border:1px solid #2176FF;
+  border-radius:5px;
+  background-color:#90e0ef;
+  margin:5px;
+}
+
+.logo{
+  background-color:white;
+}
+
+a:hover{
+  background-color:#2176ff;
+  color:white;
+  cursor:pointer;
+}
+
+.btn{
+  font-family:'Raleway', sans-serif;
+  color:white;
+  padding:10px;
+  background-color:#03045e80;
+}
+
+.btn:hover{
+  font-size:1.2em;
+}
+
+.btn:active{
+  border:1px solid #03045e;
+}
+
+.activity{
+  border:1px solid #03045e;
+  box-shadow: 0px 8px #03045e;
+}
+
+.activity:hover{
+  color:#03045e;
+  background-color:#90e0ef;
+}
+
+.activity:active{
+  margin-top:10px;
+  margin-bottom:6px;
+  box-shadow:0px 0px;
+}
+
+.reference{
+  background-color:white;
+  border:none;
+  text-decoration:underline;
+}
