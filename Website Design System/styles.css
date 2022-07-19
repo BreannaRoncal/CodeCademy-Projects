@@ -5,7 +5,7 @@ body{
   font-family:'courier new', monospace;
 }
 
-h1{
+#title{
   color:#9a3334;
   text-align:center;
 }
@@ -29,6 +29,11 @@ section{
   padding:5px;
 }
 
+.subheading{
+  text-decoration:underline;
+  margin-top:30px;
+}
+
 #elm{
   color:#f3efe0;
   background-color:#217c7e;
@@ -46,4 +51,29 @@ section{
 #stiletto{
   color:#f3efe0;
   background-color:#9a3334;
+}
+
+#times-new-roman{
+  font-family:'Times New Roman';
+}
+#georgia{
+  font-family:Georgia;
+}
+#garamond{
+  font-family:Garamond;
+}
+#helvetica{
+  font-family:Helvetica;
+}
+#ariel{
+  font-family:ariel;
+}
+#tahoma{
+  font-family:tahoma;
+}
+#courier-new{
+  font-family:courier-new;
+}
+#brush-script-mt{
+  font-family:'brush script mt';
 }
