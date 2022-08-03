@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* ~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~ */
+
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 1.5em;
+  padding-top: 30px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  border-bottom: 1px solid gray;
+  box-shadow: 0 1px 1px lightgrey;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  float: right;
+}
+
+.nav-list a {
+  font-weight: 525;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nav-list a:hover,
+.location:hover {
+  color: #00704a;
+}
+
+nav a {
+  color: #27251f;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+  float: right;
+}
+
+.member a img {
+  width: 20px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.button {
+  border: 1px solid #27251f;
+  padding: 5px 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.join-now {
+  color: white;
+  background-color: #27251f;
+}
+
+.join-now:hover {
+  background-color: gray;
+}
+
+.sign-in:hover {
+  background-color: lightgray;
+}
+/* ~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~ */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#featured-section {
+  max-width: 1444px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.feature {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.left .image-container {
+  float: left;
+}
+
+.right .image-container {
+  float: right;
+}
+
+.image-container {
+  width: 50%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+#join-starbucks-rewards {
+  background-color: #1e3932;
+}
+
+#refreshers {
+  background-color: #fa91aa;
+}
+
+#sandwich {
+  background-color: #9bf5b4;
+}
+
+#dessert {
+  background-color: #007042;
+}
+
+#disability-month {
+  background-color: #d3e9e2;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.content .button {
+  margin-top: 40px;
+}
+
+.white-text {
+  color: white;
+}
+
+.white-text .button {
+  color: white;
+  border: 1px solid white;
+}
+
+.green-text {
+  color: #1e3932;
+}
+
+.green-text .button {
+  color: #1e3932;
+  border: 1px solid #1e3932;
+}
+
+.black-text .button {
+  color: black;
+  border: 1p solid black;
+}
+
+.disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+  margin: 40px auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~ */
+
+.footer {
+  width: 100%;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid gray;
+  box-shadow: 0 -1px 2px lightgray;
+  padding-bottom: 50px;
+}
+
+.contact-links a {
+  font-size: 20px;
+  color: #1e3932;
+  text-decoration: none;
+}
+
+.follow {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-content: center;
+  border-top: 1px solid black;
+}
