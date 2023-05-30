@@ -12,6 +12,9 @@ the json library in Python does not provide a method to produce an iterator that
       It would be better to use map() to store this data as a namedtuple
    3. The cities iterable can now store the entries of the JSON file in a much more readable way.
       The other higher-order functions can be used in the same way as map() with cities now being the supplied iterable.
+         a) map()
+         b) filter()
+         c) reduce()
 """
 
 import json
